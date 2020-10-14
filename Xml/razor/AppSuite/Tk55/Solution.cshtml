@@ -1,0 +1,40 @@
+﻿@using System;
+@using System.IO;
+@using System.Collections.Generic;
+@{
+    Dictionary<string, string> dict = Model as Dictionary<string, string>;
+    string projName = dict["SubProjectName"];
+    string razorGuid = dict["RazorGuid"];
+    string webGuid = dict["WebGuid"];
+    string folderGuid = Guid.NewGuid().ToString("B").ToUpper();
+    string folderGuid2 = Guid.NewGuid().ToString("B").ToUpper();
+}
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "@folderGuid2"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "@projName", "@projName", "@folderGuid"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolkitWeb", "@projName\ToolkitWeb.csproj", "@webGuid"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		@(webGuid).Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		@(webGuid).Debug|Any CPU.Build.0 = Debug|Any CPU
+		@(webGuid).Release|Any CPU.ActiveCfg = Release|Any CPU
+		@(webGuid).Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		@webGuid = @folderGuid
+	EndGlobalSection
+EndGlobal

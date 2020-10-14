@@ -1,0 +1,43 @@
+@using System.Text;
+@using Toolkit.Suite
+@using Toolkit.Suite.Utility
+@using YJC.Toolkit.Data;
+@using YJC.Toolkit.Sys;
+@{
+    GeneratorItemEventArgs e = @Model as GeneratorItemEventArgs;
+    TableInfo table = e.Table;
+    string normalName = StringUtil.GetSignName(table.TableName);
+}
+@functions {
+    string GetFieldName(string fieldName)
+    {
+        return char.ToUpper(fieldName[0]) + fieldName.Substring(1);
+    }
+}
+import com.datanew.core.sys.annotation.SimpleAttribute;
+
+public class @(normalName)
+{
+@{
+foreach (var field in table.Fields)
+{
+    @:@@SimpleAttribute
+    @:private @RazorUtil.GetJavaType(field.DataType) @(field.FieldName);
+@:
+}
+foreach (var field in table.Fields)
+{
+    @:public final @RazorUtil.GetJavaType(field.DataType) get@(GetFieldName(field.FieldName))() {
+        @:return @(field.FieldName);
+    @:}
+@:
+}
+foreach (var field in table.Fields)
+{
+    @:public final void set@(GetFieldName(field.FieldName))(@RazorUtil.GetJavaType(field.DataType) @(field.FieldName)) {
+        @:this.@(field.FieldName) = @(field.FieldName);
+    @:}
+@:
+}
+}
+}

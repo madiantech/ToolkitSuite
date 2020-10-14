@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Toolkit version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/suite/CodeSuite.xsd">
+	<CodeGenerator CompatibleType="Toolkit" ToolkitVer="Tk30" RegName="DNJavaClass" Author="YJC" CreateDate="2016-05-27" Description="网盛数新要求的Table架构生成Row读取Class">
+		<FileName Extension="java" Catalog="DNJava">
+			<MainName NeedParse="true">{NormalTableName}</MainName>
+		</FileName>
+		<RazorFile>CodeSuite/Tk5/DNJavaTableClass.cshtml</RazorFile>
+	</CodeGenerator>
+</Toolkit>

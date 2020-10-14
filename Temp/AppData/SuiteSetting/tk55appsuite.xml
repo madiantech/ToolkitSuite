@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Toolkit SolutionName="HelloWord" SubProjectName="FirstApp" GenerateDockerFile="true" IncludeSource="true"><BasePath>D:\samples\TKCORE</BasePath><ConnectionString>Data Source=localhost;Initial Catalog=HelloWord;User ID=sa;Password=;Connect Timeout=30</ConnectionString></Toolkit>
