@@ -14,7 +14,7 @@ ToolkitSuite是TKCore官方提供的、旨在提高开发效率的一套辅助�
 
 - 配置如下：
 
-![1602566789088](https://github.com/madiantech/ToolkitSuite/tree/main/README.assets/1602566789088.png)
+![1602566789088](https://github.com/madiantech/ToolkitSuite/blob/main/README.assets/1602566789088.png)
 
 ::: tip
 勾选了“是否生成数据库”的场合，数据库连接字符串必须设置正确
