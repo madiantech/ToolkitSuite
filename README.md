@@ -14,7 +14,7 @@ ToolkitSuite是TKCore官方提供的、旨在提高开发效率的一套辅助�
 
 - 配置如下：
 
-![1602566789088](https://github.com/madiantech/ToolkitSuite/blob/main/README.assets/1602566789088.png)
+![1602566789088](http://www.tkcore.net/assets/img/1602566789088.png)
 
 ::: tip
 勾选了“是否生成数据库”的场合，数据库连接字符串必须设置正确
@@ -24,7 +24,7 @@ ToolkitSuite是TKCore官方提供的、旨在提高开发效率的一套辅助�
 
 - 生成后的Web应用目录结构如下：
 
-![1602567200126](https://github.com/madiantech/ToolkitSuite/tree/main/README.assets/1602567200126.png)
+![1602567200126](http://www.tkcore.net/assets/img/1602567200126.png)
 
 
 
@@ -38,7 +38,7 @@ ToolkitSuite是TKCore官方提供的、旨在提高开发效率的一套辅助�
 
 - 配置如下：
 
-![1602569038213](https://github.com/madiantech/ToolkitSuite/tree/main/README.assets/1602569038213.png)
+![1602569038213](http://www.tkcore.net/assets/img/1602569038213.png)
 
 ::: tip
 勾选了“分发数据库”的场合，数据库连接字符串必须设置正确
@@ -48,7 +48,7 @@ ToolkitSuite是TKCore官方提供的、旨在提高开发效率的一套辅助�
 
 - 分发后Web应用目录结构如下：
 
-![1602569290709](https://github.com/madiantech/ToolkitSuite/tree/main/README.assets/1602569290709.png)
+![1602569290709](http://www.tkcore.net/assets/img/1602569290709.png)
 
 
 
@@ -58,7 +58,7 @@ ToolkitSuite是TKCore官方提供的、旨在提高开发效率的一套辅助�
 
 - 配置如下：
 
-  ![1602571299925](https://github.com/madiantech/ToolkitSuite/tree/main/README.assets/1602571299925.png)
+  ![1602571299925](http://www.tkcore.net/assets/img/1602571299925.png)
 
 ::: 注意 这里Toolkit版本必须选择“Toolkit5.0”，预定今后优化 
 :::
@@ -67,7 +67,7 @@ ToolkitSuite是TKCore官方提供的、旨在提高开发效率的一套辅助�
 
 - 生成后，效果如下：
 
-  ![1602571453016](https://github.com/madiantech/ToolkitSuite/tree/main/README.assets/1602571453016.png)
+  ![1602571453016](http://www.tkcore.net/assets/img/1602571453016.png)
 
 
 
@@ -77,19 +77,19 @@ ToolkitSuite是TKCore官方提供的、旨在提高开发效率的一套辅助�
 
 - 配置如下：
 
-![1602569417778](https://github.com/madiantech/ToolkitSuite/tree/main/README.assets/1602569417778.png)
+![1602569417778](http://www.tkcore.net/assets/img/1602569417778.png)
 
 
 
 - 分发后效果如下：
 
-  ![1602569611490](https://github.com/madiantech/ToolkitSuite/tree/main/README.assets/1602569611490.png)
+  ![1602569611490](http://www.tkcore.net/assets/img/1602569611490.png)
 
 
 
 - 添加新项目能看到以下内容，说明分发成功：
 
-  ![1602569784893](https://github.com/madiantech/ToolkitSuite/tree/main/README.assets/1602569784893.png)
+  ![1602569784893](http://www.tkcore.net/assets/img/1602569784893.png)
 
 ::: tip
 与应用生成工具创建的应用一致，建议使用这种方式创建应用
