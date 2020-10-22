@@ -8,6 +8,28 @@
     TableInfo table = e.Table;
     StringBuilder builder = new StringBuilder();
 }
+@functions{
+    public static string GetFirstUpperStr(string s)
+    {
+        if (!string.IsNullOrEmpty(s))
+        {
+            if (s.Length > 1)
+            {
+                return char.ToUpper(s[0]) + s.Substring(1);
+            }
+            return char.ToUpper(s[0]).ToString();
+        }
+        return null;
+    }
+    public static string GetNickName(string name){
+        string[] nameSlices = name.Split('_');
+        string _name = "";
+        foreach(string nameSlice in nameSlices){
+            _name+=GetFirstUpperStr(nameSlice);
+        }
+        return _name;
+    }
+}
 <?xml version="1.0" encoding="UTF-8"?>
 <tk:Toolkit version="5.0" xsi:schemaLocation="http://www.qdocuments.net ..\..\schema\v5\DataXml.xsd" xmlns:tk="http://www.qdocuments.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <tk:Table TableName="@table.TableName">
@@ -28,7 +50,7 @@
       builder.Append(" IsEmpty=\"false\"");
     @:<tk:Field DataType="@RazorUtil.GetDataType(field.DataType)"@builder.ToString()>
       @:<tk:FieldName>@field.FieldName</tk:FieldName>
-      @:<tk:NickName>@StringUtil.GetSignName(field.FieldName)</tk:NickName>
+      @:<tk:NickName>@GetNickName(field.FieldName)</tk:NickName>
       @:<tk:DisplayName>
         @:<tk:Content>@field.DisplayName</tk:Content>
       @:</tk:DisplayName>
